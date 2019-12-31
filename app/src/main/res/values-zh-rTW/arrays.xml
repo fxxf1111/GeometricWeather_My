@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Chinese source. -->
+    <string-array name="weather_sources">
+        <item>中國天氣網（僅中國地區）</item>
+        <item>彩雲天氣（僅中國地區）</item>
+        <item>Accu Weather</item>
+    </string-array>
+
+    <!-- Location service. -->
+    <string-array name="location_services">
+        <item>百度定位</item>
+        <item>百度IP定位（僅中國地區）</item>
+        <item>高德定位</item>
+        <item>原生接口</item>
+    </string-array>
+
+    <!-- Dark mode. -->
+    <string-array name="dark_modes">
+        <item>自動</item>
+        <item>亮色主題</item>
+        <item>暗色主題</item>
+    </string-array>
+
+    <!-- UI style. -->
+    <string-array name="ui_styles">
+        <item>圓環狀天空</item>
+        <item>Material動畫</item>
+    </string-array>
+
+    <!-- card order. -->
+    <string-array name="card_orders">
+        <item>每日數據在上</item>
+        <item>小時數據在上</item>
+    </string-array>
+
+    <!-- notification style. -->
+    <string-array name="notification_styles">
+        <item>原生</item>
+        <item>@string/geometric_weather</item>
+    </string-array>
+
+    <!-- notification text color. -->
+    <string-array name="notification_text_colors">
+        <item>暗色</item>
+        <item>灰色</item>
+        <item>亮色</item>
+    </string-array>
+
+    <!-- widget style. -->
+    <string-array name="widget_styles">
+        <item>矩形</item>
+        <item>對稱</item>
+        <item>瓷磚</item>
+        <item>Mini</item>
+        <item>Nano</item>
+        <item>Pixel</item>
+        <item>竪版</item>
+        <item>奧利奧</item>
+        <item>奧利奧（Google字體）</item>
+    </string-array>
+
+    <!-- Widget subtitle data. -->
+    <string-array name="subtitle_data">
+        <item>更新時間</item>
+        <item>空氣質量 (部分地區無效)</item>
+        <item>風況</item>
+        <item>體感溫度</item>
+        <item>農曆</item>
+        <item>自定義</item>
+    </string-array>
+
+    <!-- widget clock font. -->
+    <string-array name="widget_card_styles">
+        <item>無卡片</item>
+        <item>日間夜間模式</item>
+        <item>亮色卡片</item>
+        <item>暗色卡片</item>
+    </string-array>
+
+    <!-- widget clock font. -->
+    <string-array name="widget_text_colors">
+        <item>白色文字</item>
+        <item>暗色文字</item>
+        <item>自動著色</item>
+    </string-array>
+
+    <!-- live wallpaper weather kind. -->
+    <string-array name="live_wallpaper_weather_kinds">
+        <item>自動</item>
+        <item>晴</item>
+        <item>多雲</item>
+        <item>陰</item>
+        <item>雨</item>
+        <item>雪</item>
+        <item>凍雨</item>
+        <item>冰雹</item>
+        <item>霧</item>
+        <item>霾</item>
+        <item>雷暴</item>
+        <item>雷雨</item>
+        <item>風</item>
+    </string-array>
+
+    <!-- live wallpaper weather kind. -->
+    <string-array name="live_wallpaper_day_night_types">
+        <item>自動</item>
+        <item>白晝</item>
+        <item>夜晚</item>
+    </string-array>
+
+</resources>

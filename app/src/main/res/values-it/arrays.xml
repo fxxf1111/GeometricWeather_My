@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Location service. -->
+    <string-array name="location_services">
+        <item>Localizzazione Baidu</item>
+        <item>Localizzazione IP Baidu (Cina)</item>
+        <item>Localizzazione AMAP</item>
+        <item>API Nativa</item>
+    </string-array>
+
+    <!-- Dark mode. -->
+    <string-array name="dark_modes">
+        <item>Automatico</item>
+        <item>Chiaro</item>
+        <item>Scuro</item>
+    </string-array>
+
+    <!-- UI style. -->
+    <string-array name="ui_styles">
+        <item>Orbita</item>
+        <item>Material</item>
+    </string-array>
+
+    <!-- card order. -->
+    <string-array name="card_orders">
+        <item>Giornaliero</item>
+        <item>Ad ore</item>
+    </string-array>
+
+    <!-- automatic refresh rate. -->
+    <string-array name="automatic_refresh_rates">
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+    </string-array>
+
+    <!-- notification text color. -->
+    <string-array name="notification_text_colors">
+        <item>Scuro</item>
+        <item>Grigio</item>
+        <item>Chiaro</item>
+    </string-array>
+
+    <!-- widget style. -->
+    <string-array name="widget_styles">
+        <item>Rettangolo</item>
+        <item>Simmetrico</item>
+        <item>Ordinato</item>
+        <item>Mini</item>
+        <item>Nano</item>
+        <item>Pixel</item>
+        <item>Verticale</item>
+        <item>Oreo</item>
+        <item>Oreo (Google sans)</item>
+    </string-array>
+
+    <!-- Widget subtitle data. -->
+    <string-array name="subtitle_data">
+        <item>Ultimo aggiornamento</item>
+        <item>Qualità aria</item>
+        <item>Vento</item>
+        <item>Temperatura percepita</item>
+        <item>Calendario Lunare</item>
+        <item>Custom</item>
+    </string-array>
+
+    <!-- widget clock font. -->
+    <string-array name="widget_card_styles">
+        <item>Nessuno</item>
+        <item>Giorno - Notte</item>
+        <item>Chiaro</item>
+        <item>Scuro</item>
+    </string-array>
+
+    <!-- widget clock font. -->
+    <string-array name="widget_text_colors">
+        <item>Chiaro</item>
+        <item>Scuro</item>
+        <item>Automatico</item>
+    </string-array>
+
+</resources>

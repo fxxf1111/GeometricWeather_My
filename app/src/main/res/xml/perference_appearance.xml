@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title_appearance">
+
+    <ListPreference
+        android:title="@string/settings_title_ui_style"
+        android:key="@string/key_ui_style"
+        android:entries="@array/ui_styles"
+        android:entryValues="@array/ui_style_values"
+        android:dialogTitle="@string/settings_title_ui_style"
+        android:defaultValue="material" />
+
+    <Preference
+        android:title="@string/settings_title_icon_provider"
+        android:key="@string/key_icon_provider" />
+
+    <Preference
+        android:title="@string/settings_title_card_display"
+        android:key="@string/key_card_display" />
+
+    <CheckBoxPreference
+        android:title="@string/settings_title_gravity_sensor_switch"
+        android:key="@string/key_gravity_sensor_switch"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/settings_title_list_animation_switch"
+        android:key="@string/key_list_animation_switch"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/settings_title_item_animation_switch"
+        android:key="@string/key_item_animation_switch"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:title="@string/settings_language"
+        android:key="@string/key_language"
+        android:entries="@array/languages"
+        android:entryValues="@array/language_values"
+        android:dialogTitle="@string/settings_language"
+        android:defaultValue="follow_system" />
+
+</PreferenceScreen>

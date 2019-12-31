@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_clock_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/widget_clock_day_card"
+        style="@style/widget_background_card"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/widget_clock_day_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/widget_clock_day_clock_lightContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_1_light"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="HH"
+                android:format12Hour="hh"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="-8dp"
+                android:layout_centerHorizontal="true"
+                style="@style/widget_text_clock"
+                tools:text="09" />
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_2_light"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="mm"
+                android:format12Hour="mm"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="-16dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/widget_clock_day_clock_1_light"
+                style="@style/widget_text_clock"
+                tools:text="10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_clock_day_clock_normalContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_1_normal"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="HH"
+                android:format12Hour="hh"
+                android:layout_marginTop="-8dp"
+                android:layout_centerHorizontal="true"
+                style="@style/widget_text_clock"
+                tools:text="09" />
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_2_normal"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="mm"
+                android:format12Hour="mm"
+                android:layout_marginTop="-16dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/widget_clock_day_clock_1_normal"
+                style="@style/widget_text_clock"
+                tools:text="10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_clock_day_clock_blackContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_1_black"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="HH"
+                android:format12Hour="hh"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="-8dp"
+                android:layout_centerHorizontal="true"
+                style="@style/widget_text_clock"
+                tools:text="09" />
+
+            <TextClock
+                android:id="@+id/widget_clock_day_clock_2_black"
+                android:textSize="64sp"
+                android:textAlignment="center"
+                android:format24Hour="mm"
+                android:format12Hour="mm"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="-16dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/widget_clock_day_clock_1_black"
+                style="@style/widget_text_clock"
+                tools:text="10" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_clock_day_clock_analogContainer_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <AnalogClock
+                android:id="@+id/widget_clock_day_clock_analog_light"
+                android:layout_margin="@dimen/little_margin"
+                android:layout_centerInParent="true"
+                style="@style/widget_text_clock_analog.Light"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_clock_day_clock_analogContainer_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <AnalogClock
+                android:id="@+id/widget_clock_day_clock_analog_dark"
+                android:layout_margin="@dimen/little_margin"
+                android:layout_centerInParent="true"
+                style="@style/widget_text_clock_analog.Dark"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/widget_clock_day_icon"
+                android:layout_width="@dimen/widget_standard_weather_icon_size"
+                android:layout_height="@dimen/widget_standard_weather_icon_size"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/weather_cloudy"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/widget_clock_day_title"
+                android:text="@string/ellipsis"
+                android:textSize="@dimen/widget_content_text_size"
+                android:textColor="@color/colorTextLight"
+                android:shadowColor="@color/colorTextDark2nd"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/widget_clock_day_icon"
+                android:layout_marginTop="2dp"
+                style="@style/content_text"
+                tools:text="Overcast 23℃"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/widget_clock_day_time"
+                android:text="@string/wait_refresh"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/widget_time_text_size"
+                android:shadowColor="@color/colorTextDark2nd"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/widget_clock_day_title"
+                android:layout_marginTop="2dp"
+                style="@style/content_text"
+                tools:text="San Francisco WEN 19:36"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

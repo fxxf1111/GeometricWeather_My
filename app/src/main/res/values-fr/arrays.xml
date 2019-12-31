@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- UI style. -->
+    <string-array name="ui_styles">
+        <item>Circular sky</item>
+        <item>Material animation</item>
+    </string-array>
+
+    <!-- notification text color. -->
+    <string-array name="notification_text_colors">
+        <item>Noir</item>
+        <item>Sombre</item>
+        <item>Clair</item>
+    </string-array>
+
+    <!-- widget style. -->
+    <string-array name="widget_styles">
+        <item>Rectangle</item>
+        <item>Symétrie</item>
+        <item>Carreau</item>
+        <item>Mini</item>
+        <item>Nano</item>
+        <item>Pixel</item>
+        <item>Vertical</item>
+        <item>Oreo</item>
+        <item>Oreo (Google sans)</item>
+    </string-array>
+
+    <!-- Widget subtitle data. -->
+    <string-array name="subtitle_data">
+        <item>Heure rafraichissement</item>
+        <item>AQI (Indispo en France)</item>
+        <item>Vent</item>
+        <item>Temp. ressentie</item>
+        <item>Lunar Calendar</item>
+        <item>Custom</item>
+    </string-array>
+
+</resources>
