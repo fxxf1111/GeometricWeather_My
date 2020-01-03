@@ -1,20 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- app theme -->
-    <style name="GeometricWeatherTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="GeometricWeatherTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowBackground">@color/colorRoot</item>
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
     <style name="GeometricWeatherTheme.Main" parent="GeometricWeatherTheme">
         <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="GeometricWeatherTheme.Search" parent="GeometricWeatherTheme" />

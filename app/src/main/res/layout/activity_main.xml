@@ -5,7 +5,7 @@
     android:id="@+id/activity_main_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorRoot">
+    android:background="@color/colorPrimary">
 
     <wangdaye.com.geometricweather.ui.widget.SwipeSwitchLayout
         android:id="@+id/activity_main_switchView"
