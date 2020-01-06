@@ -1,7 +1,7 @@
 <resources>
     <!-- app. -->
-    <string name="app_name">几何天气</string>
-    <string name="geometric_weather">几何天气</string>
+    <string name="app_name">天气</string>
+    <string name="geometric_weather">天气</string>
 
     <!-- keyword. -->
     <string name="current_location">请输入你所在的城市！</string>
