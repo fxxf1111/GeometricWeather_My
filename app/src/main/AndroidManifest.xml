@@ -29,7 +29,7 @@
 <!--    <uses-feature android:name="android.hardware.location.network" />-->
 
     <application
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/weather"
         android:label="@string/geometric_weather"
         android:name=".GeometricWeather"
         android:supportsRtl="true"

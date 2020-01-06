@@ -6,26 +6,11 @@ android {
         applicationId "wangdaye.com.geometricweather"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 10000
-        versionName "10000"
+        versionCode 10001
+        versionName "10001"
         multiDexEnabled true
         ndk {
             abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
-        }
-    }
-    buildTypes {
-        release {
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
-            debuggable false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
-            android.applicationVariants.all { variant ->
-                variant.outputs.all {
-                    outputFileName = "GeometricWeather ${variant.versionName}.apk"
-                }
-            }
         }
     }
     signingConfigs {
@@ -42,6 +27,27 @@ android {
             keyPassword '123321'
         }
     }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "GeometricWeather ${variant.versionName}.apk"
+                }
+            }
+        }
+    }
+
+
+
+
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
