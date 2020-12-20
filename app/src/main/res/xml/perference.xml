@@ -17,7 +17,7 @@
             android:key="@string/key_alert_notification_switch"
             android:summaryOn="@string/on"
             android:summaryOff="@string/off"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <CheckBoxPreference
             android:title="@string/settings_title_precipitation_notification_switch"

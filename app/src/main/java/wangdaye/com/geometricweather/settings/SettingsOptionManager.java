@@ -109,7 +109,7 @@ public class SettingsOptionManager {
                 context.getString(R.string.key_background_free), true);
 
         alertPushEnabled = sharedPreferences.getBoolean(
-                context.getString(R.string.key_alert_notification_switch), true);
+                context.getString(R.string.key_alert_notification_switch), false);
 
         precipitationPushEnabled = sharedPreferences.getBoolean(
                 context.getString(R.string.key_precipitation_notification_switch), false);
